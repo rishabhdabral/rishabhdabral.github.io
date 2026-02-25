@@ -692,7 +692,7 @@ function getSelectedTopics(){
 
 function matchesQuery(pub, q){
   if (!q) return true;
-  const blob = `${pub.title||""} ${pub.authors||""} ${pub.venue||""} ${(pub.topics||[]).join(" ")}`.toLowerCase();
+  const blob = `${pub.title||""} ${pub.authors||""} ${pub.venue||""} ${pub.year||""} ${(pub.topics||[]).join(" ")}`.toLowerCase();
   return blob.includes(q.toLowerCase());
 }
 
@@ -723,7 +723,6 @@ function renderPublications(){
 
   pubs = pubs.filter(p => matchesTopics(p, selectedTopics));
   pubs = pubs.filter(p => matchesQuery(p, q));
-  pubs.sort((a,b) => (b.year||0) - (a.year||0) || String(a.title||"").localeCompare(String(b.title||"")));
 
   root.innerHTML = "";
   for (const pub of pubs) {
