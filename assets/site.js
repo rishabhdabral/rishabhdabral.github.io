@@ -13,12 +13,12 @@ const NEWS = [
  {
     "date": "Feb 2026",
     "iso": "2026-02",
-    "text": "5 main papers accepted at CVPR 2026, with additional two in Findings track!"
+    "text": "5 papers accepted to CVPR 2026, with additional two in Findings track!"
   },
   {
     "date": "Dec 2025",
     "iso": "2025-12",
-    "text": 'Organizing two conferences in CVPR2026: <a href="https://humogen.github.io/" target="_blank" rel=\"noopener noreferrer\">HuMoGen</a> and <a href="https://www.iit.it/en/web/hrii/cvpr2026-workshop" target="_blank" rel=\"noopener noreferrer\">MoMA</a>'
+    "text": 'Co-organizing two workshops in CVPR 2026: <a href="https://humogen.github.io/" target="_blank" rel=\"noopener noreferrer\">HuMoGen</a> and <a href="https://www.iit.it/en/web/hrii/cvpr2026-workshop" target="_blank" rel=\"noopener noreferrer\">MoMA</a>'
   },
   {
     "date": "Oct 2025",
@@ -28,7 +28,7 @@ const NEWS = [
   {
     "date": "Feb 2025",
     "iso": "2025-02",
-    "text": "5 new papers accepted at CVPR 2025, including one Highlight paper!"
+    "text": "5 new papers accepted to CVPR 2025, including one Highlight paper!"
   },
   {
     "date": "Aug 2024",
