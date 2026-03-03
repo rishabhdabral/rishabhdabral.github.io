@@ -3,6 +3,9 @@
  * site.js
  * - Renders News + Publications.
  * - Publications: search, year filter, venue filter, topic filter.
+ * - Optional publication labels:
+ *   - set "is_new": true for a default NEW badge
+ *   - or set "new_label": "Your text" for a custom badge
  *
  * Edit content:
  *   - NEWS below
@@ -38,6 +41,100 @@ const NEWS = [
 ];
 
 const PUBLICATIONS = [
+  {
+    "title": "SceMoS: Scene-Aware 3D Human Motion Synthesis by Planning with Geometry-Grounded Tokens",
+    "primary_url": "https://anindita127.github.io/SceMoS/",
+    "authors": "Anindita Ghosh, Vladislav Golyanik, Taku Komura, Philipp Slusallek, Christian Theobalt, Rishabh Dabral",
+    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://anindita127.github.io/SceMoS/",
+      "Arxiv": "https://arxiv.org/abs/2602.20476",
+      // "Github": "https://github.com/aidilayce/FollowMyHold"
+    },
+    "media": {
+      "type": "img",
+      "src": "media/scemos.gif"
+    },
+    "topics": [
+      "Human Motion",
+      "Body",
+      "Human-Object",
+      "Human-Scene",
+      "3D Reconstruction"
+    ],
+    "venue_key": "CVPR",
+    "is_new": true
+  },
+  { "title": "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents",
+    "primary_url": "https://wenjiawang0312.github.io/projects/embodmocap/",
+    "authors": "Wenjia Wang*, Liang Pan*, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, Taku Komura",
+    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://wenjiawang0312.github.io/projects/embodmocap/",
+      "Arxiv": "https://arxiv.org/abs/2602.23205"
+    },
+    "media": {
+      "type": "video",
+      "src": "media/embod_mocap.mp4"
+    },
+    "topics": [
+      "Human Motion",
+      "3D Reconstruction",
+      "Human-Object",
+      "Human-Scene",
+      "Robotics / HCI",
+      "Multi-modal",
+      "Motion Synthesis"
+    ],
+    "venue_key": "CVPR",
+    "is_new": true
+  },
+  { "title": "Relightable Holoported Characters: Capturing and Relighting Dynamic Human Performance from Sparse Views",
+    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/RHC/",
+    "authors": "Kunwar Maheep Singh, Jianchun Chen, Vladislav Golyanik, Stephe Garbin, Thabo Beeler, Rishabh Dabral, Marc Habermann, Christian Theobalt",
+    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/RHC/",
+      "Arxiv": "https://arxiv.org/abs/2512.00255"
+    },
+    "media": {
+      "type": "video",
+      "src": "media/rhc.mp4"
+    },
+    "topics": [
+      "Lighting",
+      "3D Reconstruction",
+      "Relighting"
+    ],
+    "venue_key": "CVPR",
+    "is_new": true
+  },
+  {"title": "VHOI: Controllable Video Generation of Human–Object Interactions from Sparse Trajectories via Motion Densification",
+    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/vhoi/",
+    "authors": "Wanyue Zhang, Lin Geng Foo, Thabo Beeler, Rishabh Dabral, Christian Theobalt",
+    "venue": "Computer Vision and Pattern Recognition (CVPR) Findings Track, 2026, Denver",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/vhoi/",
+      "Arxiv": "https://arxiv.org/abs/2512.09646"
+    },
+    "media": {
+      "type": "video",
+      "src": "media/vhoi.mp4"
+    },
+    "topics": [
+      "Hands",
+      "Human-Object",
+      "3D Reconstruction",
+      "Video Generation",
+      "Generative Models"
+    ],
+    "venue_key": "CVPR",
+    "is_new": true
+  },
   {
     "title": "Follow My Hold: Hand-Object Interaction Reconstruction through Geometric Guidance",
     "primary_url": "https://aidilayce.github.io/FollowMyHold-page/",
@@ -84,7 +181,7 @@ const PUBLICATIONS = [
     "title": "Attention (as discrete-time Markov) Chains",
     "primary_url": "https://yoterel.github.io/attention_chains/",
     "authors": "Yotam Erel*, Olaf Duenkel*, Rishabh Dabral, Vladislav Golyanik, Christian Theobalt, Amit H. Bermano",
-    "venue": "Neural Information Processing Systems (NeurIPS) 2025",
+    "venue": "Neural Information Processing Systems (NeurIPS), 2025, San Diego",
     "year": 2025,
     "links": {
       "Project Page": "https://yoterel.github.io/attention_chains/",
@@ -702,6 +799,20 @@ function matchesTopics(pub, selected){
   return selected.some(t => set.has(String(t)));
 }
 
+function publicationBadge(pub){
+  const label = typeof pub.new_label === "string"
+    ? pub.new_label.trim()
+    : (pub.is_new ? "NEW" : "");
+  if (!label) return "";
+
+  return `
+    <span class="pub-badge-new">
+      <img src="assets/new-badge.svg" alt="" aria-hidden="true" />
+      <span>${escapeHtml(label)}</span>
+    </span>
+  `;
+}
+
 function renderPublications(){
   const root = $("#pub-list");
   if (!root) return;
@@ -725,7 +836,21 @@ function renderPublications(){
   pubs = pubs.filter(p => matchesQuery(p, q));
 
   root.innerHTML = "";
+  let prevYear = null;
+  const currentYear = new Date().getFullYear();
   for (const pub of pubs) {
+    const pubYear = pub.year || "Undated";
+    const shouldShowYearDivider =
+      typeof pub.year === "number" ? pub.year <= (currentYear - 1) : true;
+
+    if (shouldShowYearDivider && pubYear !== prevYear) {
+      const divider = document.createElement("div");
+      divider.className = "pub-year-divider";
+      divider.textContent = String(pubYear);
+      root.appendChild(divider);
+      prevYear = pubYear;
+    }
+
     const links = pub.links || {};
     const linkHtml = Object.entries(links)
       .filter(([,url]) => !!url)
@@ -750,13 +875,17 @@ function renderPublications(){
     // Title link falls back to first link if missing
     const titleUrl = pub.primary_url || Object.values(links)[0] || "#";
 
+    const badgeHtml = publicationBadge(pub);
     article.innerHTML = `
       <div class="pub-thumb">${mediaHtml}</div>
       <div class="pub-body">
         <div>
-          <h3 class="pub-title clamp-2" title="${escapeAttr(pub.title || "")}">
-            <a href="${escapeAttr(titleUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(pub.title || "")}</a>
-          </h3>
+          <div class="pub-title-row">
+            <h3 class="pub-title clamp-2" title="${escapeAttr(pub.title || "")}">
+              <a href="${escapeAttr(titleUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(pub.title || "")}</a>
+            </h3>
+            ${badgeHtml}
+          </div>
           <p class="pub-authors clamp-1" title="${escapeAttr(pub.authors || "")}">${escapeHtml(pub.authors || "")}</p>
           <p class="pub-venue clamp-1"><em>${escapeHtml(pub.venue || "")}</em></p>
         </div>
