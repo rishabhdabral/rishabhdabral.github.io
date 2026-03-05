@@ -522,4 +522,19 @@ h2{
     height: 180px;
     padding: 6px;
   }
+
+  /* Show full publication text on phones (no ellipsis clamp). */
+  .pub-card .clamp-1,
+  .pub-card .clamp-2{
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: initial;
+  }
+
+  .pub-title,
+  .pub-authors,
+  .pub-venue{
+    white-space: normal;
+  }
 }
