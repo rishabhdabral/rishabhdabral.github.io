@@ -66,6 +66,31 @@ const PUBLICATIONS = [
     "venue_key": "CVPR",
     "is_new": true
   },
+  { 
+    "title": "MIBURI: Towards Expressive Interactive Gesture Synthesis",
+    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/MIBURI/",
+    "authors": "M. Hamza Mughal, Rishabh Dabral, Vera Demberg, Christian Theobalt",
+    "venue": "Computer Vision and Pattern Recognition (CVPR) Findings Track, 2026, Denver",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/MIBURI/",
+      "Arxiv": "https://arxiv.org/abs/2603.03282"
+    },
+    "media": {
+      "type": "img",
+      "src": "media/miburi.gif"
+    },
+     "topics": [
+      "Human Motion",
+      "Multi-modal",
+      "Motion Synthesis",
+      "Gesture",
+      "Gesture Synthesis",
+      "Generative Models"
+    ],
+    "venue_key": "CVPR",
+    "is_new": true
+  },
   { "title": "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents",
     "primary_url": "https://wenjiawang0312.github.io/projects/embodmocap/",
     "authors": "Wenjia Wang*, Liang Pan*, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, Taku Komura",
@@ -93,7 +118,7 @@ const PUBLICATIONS = [
   },
   { "title": "Relightable Holoported Characters: Capturing and Relighting Dynamic Human Performance from Sparse Views",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/RHC/",
-    "authors": "Kunwar Maheep Singh, Jianchun Chen, Vladislav Golyanik, Stephe Garbin, Thabo Beeler, Rishabh Dabral, Marc Habermann, Christian Theobalt",
+    "authors": "Kunwar Maheep Singh, Jianchun Chen, Vladislav Golyanik, Stephen Garbin, Thabo Beeler, Rishabh Dabral, Marc Habermann, Christian Theobalt",
     "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
     "year": 2026,
     "links": {
@@ -243,7 +268,7 @@ const PUBLICATIONS = [
   {
     "title": "Retrieving Semantics from the Deep: an RAG Solution for Gesture Synthesis",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/RAG-Gesture/",
-    "authors": "Muhammad Hamza Mughal, Rishabh Dabral, Merel C.J. Scholman, Vera Demberg, Christian Theobalt",
+    "authors": "M. Hamza Mughal, Rishabh Dabral, Merel C.J. Scholman, Vera Demberg, Christian Theobalt",
     "venue": "Computer Vision and Pattern Recognition (CVPR), 2025, Nashville",
     "year": 2025,
     "links": {
@@ -406,7 +431,7 @@ const PUBLICATIONS = [
   {
     "title": "ConvoFusion: Multi-Modal Conversational Diffusion for Co-Speech Gesture Synthesis",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/ConvoFusion/",
-    "authors": "Muhammad Hamza Mughal, Rishabh Dabral, Ikhsanul Habibie, Lucia Donatelli, Marc Habermann, Christian Theobalt",
+    "authors": "M. Hamza Mughal, Rishabh Dabral, Ikhsanul Habibie, Lucia Donatelli, Marc Habermann, Christian Theobalt",
     "venue": "Computer Vision and Pattern Recognition (CVPR), 2024, Seattle",
     "year": 2024,
     "links": {
@@ -491,7 +516,7 @@ const PUBLICATIONS = [
   {
     "title": "MoFusion: A Framework for Denoising-Diffusion-based Motion Synthesis",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/MoFusion/",
-    "authors": "Rishabh Dabral, Muhammad Hamza Mughal, Vladislav Golyanik, Christian Theobalt",
+    "authors": "Rishabh Dabral, M. Hamza Mughal, Vladislav Golyanik, Christian Theobalt",
     "venue": "Computer Vision and Pattern Recognition (CVPR), 2023, Vancouver (Highlight)",
     "year": 2023,
     "links": {
