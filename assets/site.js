@@ -70,7 +70,7 @@ const PUBLICATIONS = [
     "title": "MIBURI: Towards Expressive Interactive Gesture Synthesis",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/MIBURI/",
     "authors": "M. Hamza Mughal, Rishabh Dabral, Vera Demberg, Christian Theobalt",
-    "venue": "Computer Vision and Pattern Recognition (CVPR) Findings Track, 2026, Denver",
+    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
     "year": 2026,
     "links": {
       "Project Page": "https://vcai.mpi-inf.mpg.de/projects/MIBURI/",
