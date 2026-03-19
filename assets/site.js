@@ -93,7 +93,7 @@ const PUBLICATIONS = [
   },
   { "title": "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents",
     "primary_url": "https://wenjiawang0312.github.io/projects/embodmocap/",
-    "authors": "Wenjia Wang*, Liang Pan*, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, Taku Komura",
+    "authors": "Wenjia Wang, Liang Pan, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, Taku Komura",
     "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
     "year": 2026,
     "links": {
