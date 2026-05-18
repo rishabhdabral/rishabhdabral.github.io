@@ -41,6 +41,7 @@ const NEWS = [
 ];
 
 const PUBLICATIONS = [
+  
   {
     "title": "SceMoS: Scene-Aware 3D Human Motion Synthesis by Planning with Geometry-Grounded Tokens",
     "primary_url": "https://anindita127.github.io/SceMoS/",
@@ -119,7 +120,7 @@ const PUBLICATIONS = [
   { "title": "Relightable Holoported Characters: Capturing and Relighting Dynamic Human Performance from Sparse Views",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/RHC/",
     "authors": "Kunwar Maheep Singh, Jianchun Chen, Vladislav Golyanik, Stephen Garbin, Thabo Beeler, Rishabh Dabral, Marc Habermann, Christian Theobalt",
-    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
+    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver (Oral)",
     "year": 2026,
     "links": {
       "Project Page": "https://vcai.mpi-inf.mpg.de/projects/RHC/",
@@ -156,6 +157,29 @@ const PUBLICATIONS = [
       "3D Reconstruction",
       "Video Generation",
       "Generative Models"
+    ],
+    "venue_key": "CVPR",
+    "is_new": true
+  },
+  {
+    "title": "FunREC: Reconstructing Functional 3D Scenes from Egocentric Interaction Videos",
+    "primary_url": "https://functionalscenes.github.io/",
+    "authors": "Alexandros Delitzas, Chenyangguang Zhang, Alexey Gavryushin, Tommaso Di Mario, Boyang Sun, Rishabh Dabral, Leonidas Guibas, Christian Theobalt, Marc Pollefeys, Francis Engelmann, Daniel Barath",
+    "venue": "Computer Vision and Pattern Recognition (CVPR), 2026, Denver",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://functionalscenes.github.io/",
+      "Arxiv": "https://arxiv.org/abs/2604.05621"
+    },
+    "media": {
+      "type": "img",
+      "src": "media/funrec_teaser.jpg"
+    },
+    "topics": [
+      "3D Reconstruction",
+      "Human-Scene",
+      "Robotics / HCI",
+      "Datasets"
     ],
     "venue_key": "CVPR",
     "is_new": true
