@@ -13,10 +13,21 @@
  */
 
 const NEWS = [
+
+  {
+    "date": "June 2026",
+    "iso": "2026-06",
+    "text": '<a href="https://vcai.mpi-inf.mpg.de/projects/MIBURI/" target="_blank" rel=\"noopener noreferrer\">MIBURI</a> wins the <a href="https://cvpr.thecvf.com/Conferences/2026/News/Closing" target="_blank" rel=\"noopener noreferrer\">Best Demo Award</a> at CVPR 2026.'
+ },
+ {
+    "date": "June 2026",
+    "iso": "2026-06",
+    "text": 'Two papers accepted to ECCV 2026! Congratulations to <a href="https://people.mpi-inf.mpg.de/~ksingh/" target="_blank" rel=\"noopener noreferrer\">Kunwar</a> and <a href="https://people.mpi-inf.mpg.de/~aboscolo/" target="_blank" rel=\"noopener noreferrer\">Andrea</a>!'
+ },
  {
     "date": "Feb 2026",
     "iso": "2026-02",
-    "text": "5 papers accepted to CVPR 2026, with additional two in Findings track!"
+    "text": "Five papers accepted to CVPR 2026, with additional two in Findings track!"
   },
   {
     "date": "Dec 2025",
@@ -41,7 +52,30 @@ const NEWS = [
 ];
 
 const PUBLICATIONS = [
-  
+  {
+    "title": "Generative Relightable Avatars",
+    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
+    "authors": "Kunwar Maheep Singh, Christian Theobalt, Rishabh Dabral",
+    "venue": "European Conference on Computer Vision (ECCV), 2026, Malmö",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
+      "Arxiv": "https://arxiv.org/abs/2606.22718"
+      },
+    "media": {
+      "type": "video",
+      "src": "media/gra.mp4"
+    },
+    "topics": [
+      "Relighting",
+      "Generative Models",
+      "Video Models",
+      "Digital Humans",
+      "Avatars"
+    ],
+    "venue_key": "ECCV",
+    "is_new": true
+  },
   {
     "title": "SceMoS: Scene-Aware 3D Human Motion Synthesis by Planning with Geometry-Grounded Tokens",
     "primary_url": "https://anindita127.github.io/SceMoS/",
@@ -65,7 +99,7 @@ const PUBLICATIONS = [
       "3D Reconstruction"
     ],
     "venue_key": "CVPR",
-    "is_new": true
+    "is_new": false
   },
   { 
     "title": "MIBURI: Towards Expressive Interactive Gesture Synthesis",
@@ -75,7 +109,9 @@ const PUBLICATIONS = [
     "year": 2026,
     "links": {
       "Project Page": "https://vcai.mpi-inf.mpg.de/projects/MIBURI/",
-      "Arxiv": "https://arxiv.org/abs/2603.03282"
+      "Arxiv": "https://arxiv.org/abs/2603.03282",
+      "Code": "https://github.com/m-hamza-mughal/miburi/",
+      "Award": "https://cvpr.thecvf.com/Conferences/2026/News/Closing",
     },
     "media": {
       "type": "img",
@@ -90,7 +126,7 @@ const PUBLICATIONS = [
       "Generative Models"
     ],
     "venue_key": "CVPR",
-    "is_new": true
+    "is_new": false
   },
   { "title": "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents",
     "primary_url": "https://wenjiawang0312.github.io/projects/embodmocap/",
@@ -115,7 +151,7 @@ const PUBLICATIONS = [
       "Motion Synthesis"
     ],
     "venue_key": "CVPR",
-    "is_new": true
+    "is_new": false
   },
   { "title": "Relightable Holoported Characters: Capturing and Relighting Dynamic Human Performance from Sparse Views",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/RHC/",
@@ -136,7 +172,7 @@ const PUBLICATIONS = [
       "Relighting"
     ],
     "venue_key": "CVPR",
-    "is_new": true
+    "is_new": false
   },
   {"title": "VHOI: Controllable Video Generation of Human–Object Interactions from Sparse Trajectories via Motion Densification",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/vhoi/",
@@ -159,7 +195,7 @@ const PUBLICATIONS = [
       "Generative Models"
     ],
     "venue_key": "CVPR",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "FunREC: Reconstructing Functional 3D Scenes from Egocentric Interaction Videos",
@@ -182,7 +218,7 @@ const PUBLICATIONS = [
       "Datasets"
     ],
     "venue_key": "CVPR",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Follow My Hold: Hand-Object Interaction Reconstruction through Geometric Guidance",
