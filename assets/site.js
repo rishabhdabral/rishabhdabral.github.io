@@ -95,7 +95,7 @@ const PUBLICATIONS = [
       },
     "media": {
       "type": "img",
-      "src": "media/whip_teaser.png"
+      "src": "media/whip_teaser.jpg"
     },
     "topics": [
       "Human Motion",
