@@ -25,6 +25,11 @@ const NEWS = [
     "text": 'Two papers accepted to ECCV 2026! Congratulations to <a href="https://people.mpi-inf.mpg.de/~ksingh/" target="_blank" rel=\"noopener noreferrer\">Kunwar</a> and <a href="https://people.mpi-inf.mpg.de/~aboscolo/" target="_blank" rel=\"noopener noreferrer\">Andrea</a>!'
  },
  {
+    "date": "June 2026",
+    "iso": "2026-06",
+    "text": 'Co-organizing the <a href="https://www.hsi-workshop.com/" target="_blank" rel=\"noopener noreferrer\">ECCV Workshop on Human-Scene Interaction</a>'
+ },
+ {
     "date": "Feb 2026",
     "iso": "2026-02",
     "text": "Five papers accepted to CVPR 2026, with additional two in Findings track!"
@@ -53,6 +58,30 @@ const NEWS = [
 
 const PUBLICATIONS = [
   {
+    "title": "Generative Relightable Avatars",
+    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
+    "authors": "Kunwar Maheep Singh, Christian Theobalt, Rishabh Dabral",
+    "venue": "European Conference on Computer Vision (ECCV), 2026, Malmö",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
+      "Arxiv": "https://arxiv.org/abs/2606.22718"
+      },
+    "media": {
+      "type": "video",
+      "src": "media/gra.mp4"
+    },
+    "topics": [
+      "Relighting",
+      "Generative Models",
+      "Video Models",
+      "Digital Humans",
+      "Avatars"
+    ],
+    "venue_key": "ECCV",
+    "is_new": true
+  },
+  {
     "title": "WHIP: Towards Real-World Wearable Motion Reconstruction",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/WHIP/",
     "authors": "Andrea Boscolo Camiletto, Rishabh Dabral, Eduardo Alvarado, Thabo Beeler, Marc Habermann, Christian Theobalt",
@@ -74,30 +103,6 @@ const PUBLICATIONS = [
       "Multi-modal",
       "Motion Synthesis",
       "Generative Models"
-    ],
-    "venue_key": "ECCV",
-    "is_new": true
-  },
-  {
-    "title": "Generative Relightable Avatars",
-    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
-    "authors": "Kunwar Maheep Singh, Christian Theobalt, Rishabh Dabral",
-    "venue": "European Conference on Computer Vision (ECCV), 2026, Malmö",
-    "year": 2026,
-    "links": {
-      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
-      "Arxiv": "https://arxiv.org/abs/2606.22718"
-      },
-    "media": {
-      "type": "video",
-      "src": "media/gra.mp4"
-    },
-    "topics": [
-      "Relighting",
-      "Generative Models",
-      "Video Models",
-      "Digital Humans",
-      "Avatars"
     ],
     "venue_key": "ECCV",
     "is_new": true
