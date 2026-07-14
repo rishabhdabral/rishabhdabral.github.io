@@ -53,6 +53,32 @@ const NEWS = [
 
 const PUBLICATIONS = [
   {
+    "title": "WHIP: Towards Real-World Wearable Motion Reconstruction",
+    "primary_url": "https://vcai.mpi-inf.mpg.de/projects/WHIP/",
+    "authors": "Andrea Boscolo Camiletto, Rishabh Dabral, Eduardo Alvarado, Thabo Beeler, Marc Habermann, Christian Theobalt",
+    "venue": "European Conference on Computer Vision (ECCV), 2026, Malmö",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://vcai.mpi-inf.mpg.de/projects/WHIP/",
+      "Arxiv": "https://arxiv.org/abs/2607.09780",
+      "Code": "https://github.com/abcamiletto/whip",
+      "Dataset": "https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.ZGVC7M"
+      },
+    "media": {
+      "type": "img",
+      "src": "media/whip_teaser.png"
+    },
+    "topics": [
+      "Human Motion",
+      "3D Reconstruction",
+      "Multi-modal",
+      "Motion Synthesis",
+      "Generative Models"
+    ],
+    "venue_key": "ECCV",
+    "is_new": true
+  },
+  {
     "title": "Generative Relightable Avatars",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
     "authors": "Kunwar Maheep Singh, Christian Theobalt, Rishabh Dabral",
