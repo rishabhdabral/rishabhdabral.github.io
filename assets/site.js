@@ -116,7 +116,8 @@ const PUBLICATIONS = [
     "links": {
       "Project Page": "https://anindita127.github.io/SceMoS/",
       "Arxiv": "https://arxiv.org/abs/2602.20476",
-      // "Github": "https://github.com/aidilayce/FollowMyHold"
+      "Code": "https://github.com/anindita127/SceMoS_codebase",
+      "Data": "https://edmond.mpg.de/file.xhtml?fileId=345209&version=2.0"
     },
     "media": {
       "type": "img",
