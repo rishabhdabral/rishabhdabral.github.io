@@ -58,6 +58,31 @@ const NEWS = [
 
 const PUBLICATIONS = [
   {
+    "title": "Grasp in Gaussians: Fast Monocular Reconstruction of Dynamic Hand-Object Interactions",
+    "primary_url": "https://aidilayce.github.io/GraG-page/",
+    "authors": "Ayce Idil Aytekin, Xu Chen, Zhengyang Shen, Thabo Beeler, Helge Rhodin, Rishabh Dabral, Christian Theobalt",
+    "venue": "ACM SIGGRAPH Asia (Conference), 2026, Kuala Lumpur",
+    "year": 2026,
+    "links": {
+      "Project Page": "https://aidilayce.github.io/GraG-page/",
+      "Arxiv": "https://arxiv.org/abs/2604.12929",
+      "Code": "https://github.com/aidilayce/GraG"
+      },
+    "media": {
+      "type": "video",
+      "src": "media/grag.mp4"
+    },
+    "topics": [
+      "Reconstruction",
+      "Generative Models",
+      "3D Reconstruction",
+      "Digital Humans",
+      "Tracking",
+    ],
+    "venue_key": "SIGGRAPH",
+    "is_new": true
+  },
+  {
     "title": "Generative Relightable Avatars",
     "primary_url": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
     "authors": "Kunwar Maheep Singh, Christian Theobalt, Rishabh Dabral",
@@ -65,7 +90,9 @@ const PUBLICATIONS = [
     "year": 2026,
     "links": {
       "Project Page": "https://vcai.mpi-inf.mpg.de/projects/GRA/",
-      "Arxiv": "https://arxiv.org/abs/2606.22718"
+      "Arxiv": "https://arxiv.org/abs/2606.22718",
+      "Code": "https://github.com/simba611/GRA/",
+      "Data": "https://gvv-assets.mpi-inf.mpg.de/rhc/"
       },
     "media": {
       "type": "video",
