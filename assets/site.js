@@ -59,11 +59,12 @@ const NEWS = [
 const PUBLICATIONS = [
   {
     "title": "ReFree: Towards Realistic Co-Speech Video Generation via Reward-Free RL and Multilevel Speech Guidance",
-    "primary_url": "https://arxiv.org/abs/2606.13304",
+    "primary_url": "https://salaheldinyoussry.github.io/ReFree-S2V/",
     "authors": "Salaheldin Mohamed, M. Hamza Mughal, Rishabh Dabral, Christian Theobalt",
     "venue": "Neural Information Processing Systems (NeurIPS), 2026",
     "year": 2026,
     "links": {
+      "Project Page": "https://salaheldinyoussry.github.io/ReFree-S2V/",
       "Arxiv": "https://arxiv.org/abs/2606.13304"
       },
     "media": {
@@ -129,7 +130,7 @@ const PUBLICATIONS = [
       "Avatars"
     ],
     "venue_key": "ECCV",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "WHIP: Towards Real-World Wearable Motion Reconstruction",
@@ -155,7 +156,7 @@ const PUBLICATIONS = [
       "Generative Models"
     ],
     "venue_key": "ECCV",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "SceMoS: Scene-Aware 3D Human Motion Synthesis by Planning with Geometry-Grounded Tokens",
