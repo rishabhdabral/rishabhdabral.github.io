@@ -58,6 +58,29 @@ const NEWS = [
 
 const PUBLICATIONS = [
   {
+    "title": "ReFree: Towards Realistic Co-Speech Video Generation via Reward-Free RL and Multilevel Speech Guidance",
+    "primary_url": "https://arxiv.org/abs/2606.13304",
+    "authors": "Salaheldin Mohamed, M. Hamza Mughal, Rishabh Dabral, Christian Theobalt",
+    "venue": "Neural Information Processing Systems (NeurIPS), 2026",
+    "year": 2026,
+    "links": {
+      "Arxiv": "https://arxiv.org/abs/2606.13304"
+      },
+    "media": {
+      "type": "video",
+      "src": "media/refree-s2v.mp4"
+    },
+    "topics": [
+      "Video Models",
+      "Generative Models",
+      "Digital Humans",
+      "Gesture",
+      "Multi-modal"
+    ],
+    "venue_key": "NeurIPS",
+    "is_new": true
+  },
+  {
     "title": "Grasp in Gaussians: Fast Monocular Reconstruction of Dynamic Hand-Object Interactions",
     "primary_url": "https://aidilayce.github.io/GraG-page/",
     "authors": "Ayce Idil Aytekin, Xu Chen, Zhengyang Shen, Thabo Beeler, Helge Rhodin, Rishabh Dabral, Christian Theobalt",
